@@ -35,5 +35,7 @@ ecall       # used to switch to kernel mode to make the system call
 
 
 # Bonus: Now display a number, you will need the documentation.
-li t0, 666
+li a0, 32 	# integer to print
+li a7, 1        
+ecall          # print it       
 
